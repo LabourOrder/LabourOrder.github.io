@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Resume</title>
+  <title>Nikita Sizykh — Experimental Physicist</title>
+  <meta name="description" content="Nikita Sizykh — experimental physicist and microelectronics R&amp;D researcher specializing in semiconductor and ferroelectric devices, thin films, and synchrotron spectroscopy." />
   <style>
+    html {
+      color-scheme: light;
+    }
     body {
       font-family: Arial, sans-serif;
       max-width: 850px;
@@ -13,86 +17,344 @@
       line-height: 1.6;
       color: #222;
     }
-    h1, h2 {
+    h1, h2, h3, h4 {
       color: #111;
+    }
+    h1 {
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin-bottom: 18px;
+    }
+    h3, h4 {
+      margin: 0 0 4px;
+      font-size: 1.05em;
+    }
+    p {
+      margin: 8px 0;
+    }
+    a {
+      color: #0366d6;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+    a:focus-visible {
+      outline: 2px solid #0366d6;
+      outline-offset: 4px;
     }
     .header {
       border-bottom: 2px solid #ddd;
       margin-bottom: 30px;
-      padding-bottom: 15px;
+      padding-bottom: 20px;
     }
-    .links a {
-      margin-right: 15px;
-      color: #0366d6;
-      text-decoration: none;
+    .subtitle {
+      font-size: 1.15em;
+    }
+    .links, .section-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin-top: 16px;
+    }
+    .section-nav {
+      font-size: 0.95em;
     }
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 36px;
     }
     .item {
-      margin-bottom: 18px;
+      margin-bottom: 24px;
     }
-    .date {
-      color: #666;
+    .project {
+      margin-top: 18px;
+    }
+    .date, .affiliation {
+      color: #595959;
       font-size: 0.95em;
+    }
+    .publications {
+      padding-left: 24px;
+    }
+    .publications li {
+      margin-bottom: 20px;
+      padding-left: 4px;
+    }
+    .doi {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.95em;
+    }
+    @media (max-width: 600px) {
+      body {
+        margin: 24px auto;
+        padding: 0 18px;
+      }
+      h1 {
+        font-size: 1.9em;
+      }
+    }
+    @media print {
+      body {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        font-size: 10pt;
+      }
+      .section-nav {
+        display: none;
+      }
+      a {
+        color: inherit;
+      }
+      h2, h3, h4 {
+        break-after: avoid;
+      }
+      .project, .publications li {
+        break-inside: avoid;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
+  <header class="header">
     <h1>Nikita Sizykh</h1>
-    <p>PhD Candidate / Researcher in Ferroelectric HfO₂-based Memory Devices</p>
+    <p class="subtitle">Experimental Physicist · Semiconductor &amp; Ferroelectric Devices</p>
+    <p>Moscow, Russia · Open to relocation</p>
     <div class="links">
+      <a href="mailto:sizykh.na@phystech.edu">sizykh.na@phystech.edu</a>
+      <a href="https://orcid.org/0009-0000-0204-5104" rel="me">ORCID</a>
       <a href="https://github.com/labourorder">GitHub</a>
       <a href="https://linkedin.com/in/nikita-sizykh-303918160">LinkedIn</a>
-      <a href="mailto:sizykh.na@phystech.edu">Email</a>
-      <a href="cv.pdf">Download CV</a>
+      <a href="cv.pdf" download="Nikita-Sizykh-CV.pdf" type="application/pdf">Download CV (PDF)</a>
     </div>
-  </div>
+    <nav class="section-nav" aria-label="Resume sections">
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards</a>
+      <a href="#additional-experience">Additional experience</a>
+    </nav>
+  </header>
 
-  <div class="section">
-    <h2>About</h2>
-    <p>
-      I work on ferroelectric thin films and related memory and neuromorphic devices, interfacial phenomena, and defect-related device behavior.
-    </p>
-  </div>
+  <main>
+    <section class="section" id="profile" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Profile</h2>
+      <p>
+        Experimental physicist and microelectronics R&amp;D researcher with end-to-end experience in thin-film device
+        fabrication, electrical characterization, synchrotron-based spectroscopy (HAXPES, DAFS), data analysis,
+        and physics-based modeling. My research focuses on HfO₂–ZrO₂ ferroelectric devices, reliability,
+        electrically active defects, and buried interfaces. I develop custom experimental setups,
+        automated measurement workflows, and operando synchrotron experiments.
+      </p>
+    </section>
 
-  <div class="section">
-    <h2>Education</h2>
-    <div class="item">
-      <strong>PhD in Physics</strong><br />
-      Moscow Institute of Physics and Technology<br />
-      <span class="date">Expected 2026</span>
-    </div>
-  </div>
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Research Experience</h2>
+      <article class="item">
+        <h3>Moscow Institute of Physics and Technology (MIPT)</h3>
+        <p>Research Engineer <span class="date">(2020–2024)</span> → Junior Research Fellow <span class="date">(2024–present)</span></p>
+        <p class="affiliation">Lab of Functional Materials and Devices for Nanoelectronics</p>
 
-  <div class="section">
-    <h2>Research Experience</h2>
-    <div class="item">
-      <strong>Ferroelectric HZO capacitor structures</strong><br />
-      Studied interface-related effects, defect states, leakage behavior,
-      breakdown kinetics, and electrical cycling phenomena.
-    </div>
-  </div>
+        <div class="project">
+          <h4>Ferroelectric HZO devices for non-volatile memory</h4>
+          <p class="date">2022–2026</p>
+          <p>
+            Developed and fabricated HZO-based devices and test structures on standalone chips and 4″ wafers,
+            including refinement of fabrication processes. Investigated polarization switching, retention loss,
+            endurance, leakage, dielectric breakdown, and multilevel operation; developed automated electrical
+            measurement and data-processing workflows.
+          </p>
+        </div>
+        <div class="project">
+          <h4>Operando DAFS/NEXAFS of electrically biased devices</h4>
+          <p class="date">2024–2025</p>
+          <p>
+            Developed and implemented the electrical part of operando synchrotron experiments and post-processing;
+            participated in integration of the experimental setup at the synchrotron end-station.
+          </p>
+        </div>
+        <div class="project">
+          <h4>HAXPES metrology and standardization for synchrotron measurements</h4>
+          <p class="date">2021–2022</p>
+          <p>
+            Contributed to the development of a certified measurement procedure for determining the electronic
+            and chemical properties of functional thin-film structures using HAXPES, within a national program
+            on measurement traceability at synchrotron-radiation facilities.
+          </p>
+        </div>
+        <div class="project">
+          <h4>Buried metal/HZO interface characterization by NTR SW-HAXPES</h4>
+          <p class="date">2021–2022</p>
+          <p>
+            Developed an analysis methodology combining NTR SW-HAXPES with X-ray reflectivity modeling
+            to investigate the chemical and electronic structure of buried metal/HZO interfaces, refine
+            the multilayer structure, and determine Schottky barrier heights.
+          </p>
+        </div>
+      </article>
 
-  <div class="section">
-    <h2>Selected Publications</h2>
-    <ul>
-      <li>Sizykh, N., Spiridonov, M., Khanas, A. and Zenkevich, A., 2025. Realization of Deterministic Multilevel Polarization States in Ferroelectric Hf0. 5Zr0. 5O2-Based Capacitors. Russian Microelectronics, 54(8), pp.886-891.</li>
-      <li>Matchenya, I., Khanas, A., Podgornyi, R., Shirkin, D., Ekgardt, A., Sizykh, N., Anoshkin, S., Krasnikov, D.V., Yulin, A., Zhukov, A. and Nasibulin, A.G., 2025. Short‐Term Bienenstock‐Cooper‐Munro Learning in Optoelectrically‐Driven Flexible Halide Perovskite Single Crystal Memristors. Small Methods, 9(9), p.e00203.</li>
-      <li>Chernikova, A.G., Sizykh, N.A., Zabrosaev, I.V. and Markeev, A.M., 2025. TiN/HZO/TiN ferroelectric capacitors with TiO2 insets: Critical difference between top and bottom interface modification. Surfaces and Interfaces, 62, p.106135.</li>
-      <li>Chouprik, A., Savelyeva, E., Korostylev, E., Kondratyuk, E., Zarubin, S., Sizykh, N., Zhuk, M., Zenkevich, A., Markeev, A.M., Kondratev, O. and Yakunin, S., 2023. Effect of domain structure and dielectric interlayer on switching speed of ferroelectric Hf0. 5Zr0. 5O2 film. Nanomaterials, 13(23), p.3063.</li>
-      <li>Zhuk, M.Y., Sizykh, N.A., Kuzmichev, D.S., Chouprik, A.A., Zarubin, S.S., Gornev, E.S. and Zenkevich, A.V., 2022. Effect of Electrode Nanopatterning on the Functional Properties of Ta/TaO x/Pt Resistive Memory Devices. ACS Applied Nano Materials, 5(6), pp.8594-8601.</li>
-    </ul>
-  </div>
+      <article class="item">
+        <h3>JSC NIIGraphite</h3>
+        <p>Research Engineer <span class="date">| 2019–2021</span></p>
+        <p class="affiliation">Department of Advanced Development</p>
+        <div class="project">
+          <h4>Raman spectroscopy of SiC-based composite materials</h4>
+          <p class="date">2019–2020</p>
+          <p>
+            Participated in the development of a Raman-spectroscopy-based methodology for assessing
+            component distribution in silicon-carbide-based composite materials.
+          </p>
+        </div>
+      </article>
+    </section>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <p>
-      Python, MATLAB, LaTeX, nanofabrication, electrical characterization, reliability testing, XPS/HAXPES, XRD, operando experiments.
-    </p>
-  </div>
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="item">
+        <h3>PhD Candidate, Condensed Matter Physics</h3>
+        <p>Moscow Institute of Physics and Technology <span class="date">| 2022–2026</span></p>
+        <p>Thesis defense scheduled for December 2026.</p>
+        <p>Thesis: “Study of Interfaces in Ferroelectric Hafnium–Zirconium Oxide-Based Capacitor Structures for Memory and Neuromorphic Applications”</p>
+      </div>
+      <div class="item">
+        <h3>MSc, Applied Mathematics and Physics</h3>
+        <p>Moscow Institute of Physics and Technology <span class="date">| 2020–2022</span></p>
+        <p>Thesis: “Investigation of the Chemical and Electronic Properties of the Buried HZO/W Interface Utilizing NTR SW-HAXPES”</p>
+      </div>
+      <div class="item">
+        <h3>BSc, Nanoengineering</h3>
+        <p>Bauman Moscow State Technical University <span class="date">| 2016–2020</span></p>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="item">
+        <h3>Device fabrication &amp; processing</h3>
+        <p>
+          MIM, MFM, MFMIS, and MOS structures; magnetron sputtering; e-beam evaporation;
+          optical lithography with positive and negative photoresists; wet and dry etching.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Electrical characterization &amp; reliability</h3>
+        <p>
+          Probe stations equipped with a semiconductor device parameter analyzer; custom test benches using
+          SMUs, WGFMUs, AWGs, and OSCs; I–V and C–V characterization; ferroelectric switching, retention,
+          endurance, electrical stress, and dielectric breakdown; experiment automation.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Materials characterization</h3>
+        <p>
+          XPS; NTR SW-HAXPES; XRD; X-ray reflectivity; operando DAFS; SEM;
+          FIB cross-sectional lamella preparation for TEM and Slice-and-View.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Scientific computing, automation &amp; engineering tools</h3>
+        <p>
+          Python; MATLAB; C/C++ (Arduino); instrument control (VISA); scientific data processing;
+          physics-based modeling; Git; KLayout; Altium Designer; Autodesk Eagle; Autodesk Fusion 360.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Languages &amp; scientific communication</h3>
+        <p>
+          Russian — native; English — B2; manuscript preparation and internal review;
+          preparation of responses to reviewers; conference presentations.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications</h2>
+      <ul class="publications">
+        <li>
+          <strong>Sizykh, N.A.</strong>, Spiridonov, M., Khanas, A. and Zenkevich, A.V., 2026.
+          Interface defects as the origin of breakdown in ferroelectric TiN/HZO/TiN memory capacitors subjected to electrical stress.
+          <em>Applied Physics Letters</em>, 128, 252903.
+          <a class="doi" href="https://doi.org/10.1063/5.0336988">DOI: 10.1063/5.0336988</a>
+        </li>
+        <li>
+          Kuzmichev, D.S., Konstantinov, V.S., <strong>Sizykh, N.A.</strong> and Khakimov, R.R., 2026.
+          How to make opposite state store again.
+          <em>Nanosystems: Physics, Chemistry, Mathematics</em>, 17(2), pp. 187–192.
+          <a class="doi" href="https://doi.org/10.17586/2220-8054-2026-17-2-187-192">DOI: 10.17586/2220-8054-2026-17-2-187-192</a>
+        </li>
+        <li>
+          <strong>Sizykh, N.A.</strong>, Spiridonov, M., Khanas, A. and Zenkevich, A.V., 2025.
+          Realization of Deterministic Multilevel Polarization States in Ferroelectric Hf₀.₅Zr₀.₅O₂-Based Capacitors.
+          <em>Russian Microelectronics</em>, 54(8), pp. 886–891.
+          <a class="doi" href="https://doi.org/10.1134/S1063739725601808">DOI: 10.1134/S1063739725601808</a>
+        </li>
+        <li>
+          Matchenya, I., Khanas, A., Podgornyi, R., Shirkin, D., Ekgardt, A., <strong>Sizykh, N.A.</strong>, et al., 2025.
+          Short-Term Bienenstock-Cooper-Munro Learning in Optoelectrically-Driven Flexible Halide Perovskite Single Crystal Memristors.
+          <em>Small Methods</em>, 9(9), e00203.
+          <a class="doi" href="https://doi.org/10.1002/smtd.202500203">DOI: 10.1002/smtd.202500203</a>
+        </li>
+        <li>
+          Chernikova, A.G., <strong>Sizykh, N.A.</strong>, Zabrosaev, I.V. and Markeev, A.M., 2025.
+          TiN/HZO/TiN ferroelectric capacitors with TiO₂ insets: Critical difference between top and bottom interface modification.
+          <em>Surfaces and Interfaces</em>, 62, 106135.
+          <a class="doi" href="https://doi.org/10.1016/j.surfin.2025.106135">DOI: 10.1016/j.surfin.2025.106135</a>
+        </li>
+        <li>
+          Chouprik, A., Savelyeva, E., Korostylev, E., Kondratyuk, E., Zarubin, S., <strong>Sizykh, N.A.</strong>, et al., 2023.
+          Effect of Domain Structure and Dielectric Interlayer on Switching Speed of Ferroelectric Hf₀.₅Zr₀.₅O₂ Film.
+          <em>Nanomaterials</em>, 13(23), 3063.
+          <a class="doi" href="https://doi.org/10.3390/nano13233063">DOI: 10.3390/nano13233063</a>
+        </li>
+        <li>
+          Zhuk, M.Yu., <strong>Sizykh, N.A.</strong>, Kuzmichev, D.S., Chouprik, A.A., Zarubin, S.S., Gornev, E.S. and Zenkevich, A.V., 2022.
+          Effect of Electrode Nanopatterning on the Functional Properties of Ta/TaOₓ/Pt Resistive Memory Devices.
+          <em>ACS Applied Nano Materials</em>, 5(6), pp. 8594–8601.
+          <a class="doi" href="https://doi.org/10.1021/acsanm.2c02076">DOI: 10.1021/acsanm.2c02076</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="awards" aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Awards</h2>
+      <div class="item">
+        <h3>Best Oral Presentation</h3>
+        <p>Synchrotron Radiation Techniques for Catalysts and Functional Materials · Tomsk <span class="date">| 2024</span></p>
+        <p>“Application of hard X-ray photoelectron spectroscopy in near total reflection regime for the study of nanoelectronic devices”</p>
+      </div>
+      <div class="item">
+        <h3>ROSATOM Award · “Innovative Scientific Leader in Nuclear Field”</h3>
+        <p class="date">2020</p>
+      </div>
+    </section>
+
+    <section class="section" id="additional-experience" aria-labelledby="additional-experience-heading">
+      <h2 id="additional-experience-heading">Additional Experience</h2>
+      <div class="item">
+        <h3>Web Dashboard for Users of MIPT Center of Shared Research Facilities</h3>
+        <p class="date">2024–2026</p>
+        <p>Designed the dashboard architecture and maintained the service on a daily basis.</p>
+      </div>
+      <div class="item">
+        <h3>FIB–SEM characterization of reservoir rock cores</h3>
+        <p class="date">2022–2023</p>
+        <p>
+          Prepared cross-sections of reservoir rock core samples using focused ion beam (FIB) milling;
+          generated SEM image stacks for 3D reconstruction of pore-space morphology and fluid flow simulations.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Physics tutor</h3>
+        <p class="date">2019–2022</p>
+        <p>Tutored high-school and university students in physics and prepared them for examinations.</p>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
