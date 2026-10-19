@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SW-HAXPES of Buried HZO/W Interfaces — Nikita Sizykh</title>
+  <meta name="description" content="Nikita Sizykh's SW-HAXPES project: connecting angle-dependent photoemission, multilayer modeling, and band alignment to characterize buried ferroelectric HZO/W interfaces." />
+  <meta name="author" content="Nikita Sizykh" />
+  <link rel="canonical" href="https://labourorder.github.io/projects/sw-haxpes/" />
+  <link rel="stylesheet" href="../../assets/project.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Probing buried HZO/W interfaces — Nikita Sizykh" />
+  <meta property="og:description" content="An SW-HAXPES analysis workflow, from angular scans to interface structure and electronic barriers." />
+  <meta property="og:url" content="https://labourorder.github.io/projects/sw-haxpes/" />
+  <meta property="og:image" content="https://labourorder.github.io/projects/sw-haxpes/images/fig05_haxpes_main_result.png" />
+  <meta property="og:image:alt" content="Calculated X-ray intensity maps, measured and fitted rocking curves, and HZO/W multilayer structures." />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="container">
+    <header class="site-header">
+      <a class="name" href="../../">Nikita Sizykh</a>
+      <nav aria-label="Project navigation">
+        <a href="../../#projects">← Back to projects</a>
+        <a href="mailto:sizykh.na@phystech.edu">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header class="hero">
+        <p class="eyebrow">SW-HAXPES · Research project · 2021–2022</p>
+        <h1>Probing buried HZO/W interfaces</h1>
+        <p class="lead">
+          Connecting angle-dependent photoemission to the structure and electronic properties
+          of ferroelectric hafnium–zirconium oxide (HZO) on tungsten.
+        </p>
+        <dl class="project-facts">
+          <div><dt>Institution</dt><dd>MIPT</dd></div>
+          <div><dt>Sample system</dt><dd>HZO / W on Si</dd></div>
+          <div><dt>Research context</dt><dd>MSc thesis, 2022</dd></div>
+        </dl>
+      </header>
+
+      <div class="overview-grid">
+        <section aria-labelledby="objective-heading">
+          <h2 id="objective-heading">Research objective</h2>
+          <p>
+            Characterize the chemical and electronic structure of a buried oxide/metal interface
+            using near-total-reflection standing-wave hard X-ray photoelectron spectroscopy
+            (NTR SW-HAXPES). The analysis connects the angular dependence of the photoemission
+            signal to the multilayer structure and interface band alignment.
+          </p>
+        </section>
+        <section aria-labelledby="contribution-heading">
+          <h2 id="contribution-heading">My contribution</h2>
+          <p>
+            I developed an analysis methodology combining NTR SW-HAXPES with X-ray reflectivity
+            modeling to refine the multilayer structure, examine buried interfaces, and determine
+            Schottky barrier heights. The workflow brings together spectral fitting, optical modeling,
+            and depth-selective analysis.
+          </p>
+        </section>
+      </div>
+
+      <section class="project-section" aria-labelledby="workflow-heading">
+        <h2 id="workflow-heading">From angular scans to interface structure</h2>
+        <p class="section-intro">
+          At a photon energy of 6 keV, spectra are collected as the grazing incidence angle changes.
+          Modeling the X-ray field and photoelectron attenuation connects these angular scans
+          to the depth-dependent contribution of the HZO layer and its buried interface.
+        </p>
+        <figure>
+          <a class="figure-link" href="images/fig01_haxpes_experiment.png" aria-label="Open the experiment and angular-scan figure at full size">
+            <img src="images/fig01_haxpes_experiment.png" width="1728" height="818" fetchpriority="high"
+              alt="Grazing-incidence HAXPES geometry for 10 nm HZO on 50 nm W and a Si substrate, alongside Hf 4f spectra collected during an angular scan at 6 keV." />
+          </a>
+          <figcaption>
+            Experimental geometry and a representative sequence of Hf 4f spectra.
+            The illustrated stack contains 10 nm of HZO on a 50 nm W electrode.
+          </figcaption>
+        </figure>
+        <p class="figure-hint">Select any figure to open the original at full size.</p>
+        <ol class="workflow">
+          <li>
+            <h3>1. Extract the signal</h3>
+            <p>Fit the Hf 4f and O 2s spectral components and extract their intensity as a function of incidence angle.</p>
+          </li>
+          <li>
+            <h3>2. Refine the structure</h3>
+            <p>Use a multilayer optical model to calculate the X-ray field and fit the measured angular intensity curves.</p>
+          </li>
+          <li>
+            <h3>3. Resolve interface properties</h3>
+            <p>Identify angles with enhanced interface sensitivity and use core-level and valence-band energies for band alignment.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="project-section" aria-labelledby="results-heading">
+        <h2 id="results-heading">What the analysis reveals</h2>
+        <h3>Interface structure</h3>
+        <p class="section-intro">
+          The fitted angular intensity curves and calculated X-ray fields distinguish the illustrated
+          HZO/W and HZO/WO<sub>x</sub>/W structures. The latter includes an approximately 2 nm tungsten-oxide interlayer.
+        </p>
+        <figure>
+          <a class="figure-link" href="images/fig05_haxpes_main_result.png" aria-label="Open the structural modeling results at full size">
+            <img src="images/fig05_haxpes_main_result.png" width="1788" height="773" loading="lazy" decoding="async"
+              alt="Two rows compare calculated X-ray intensity maps, rocking-curve fits, and refined structures for HZO/W and HZO/WOx/W, with a 2 nm WOx interlayer in the second structure." />
+          </a>
+          <figcaption>
+            Structural analysis: calculated X-ray intensity maps, experimental and fitted rocking curves,
+            and the corresponding multilayer structures. A rocking curve is the photoemission intensity
+            measured as the incidence angle changes.
+          </figcaption>
+        </figure>
+
+        <div class="result-grid">
+          <div>
+            <h3>Electronic barrier</h3>
+            <p class="result-value">2.1 ± 0.1 eV</p>
+            <p class="result-label">Electron barrier in the illustrated HZO/WO<sub>x</sub>/W band diagram</p>
+            <p>
+              Core-level and valence-band measurements provide the energy reference for the band-alignment
+              analysis. The resulting diagram places the HZO conduction-band minimum above the metal Fermi level
+              by the barrier shown here.
+            </p>
+          </div>
+          <figure>
+            <a class="figure-link" href="images/fig08_haxpes_kraut_1.png" aria-label="Open the interface band-alignment diagram at full size">
+              <img src="images/fig08_haxpes_kraut_1.png" width="680" height="468" loading="lazy" decoding="async"
+                alt="HZO/WOx/W band-alignment diagram showing the HZO conduction and valence band edges, the W Fermi level, and an electron barrier of 2.1 plus or minus 0.1 eV." />
+            </a>
+            <figcaption>Band alignment across the oxide/interlayer/metal structure.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" aria-labelledby="details-heading">
+        <h2 id="details-heading">Inside the analysis</h2>
+        <p class="section-intro">Supporting figures show how the spectra, structural model, and energy references connect.</p>
+
+        <details>
+          <summary>Spectral fitting and angular intensity extraction</summary>
+          <div class="detail-content">
+            <p>
+              Separating Hf 4f and O 2s contributions produces component-resolved angular intensity curves
+              for comparison with the optical model.
+            </p>
+            <figure>
+              <a class="figure-link" href="images/fig02_haxpes_extraction.png" aria-label="Open the spectral extraction workflow at full size">
+                <img src="images/fig02_haxpes_extraction.png" width="1346" height="885" loading="lazy" decoding="async"
+                  alt="Raw angle-dependent spectra, a representative Hf 4f and O 2s fit, extracted spectral components, and the resulting Hf 4f angular intensity curve." />
+              </a>
+              <figcaption>From the raw spectra to fitted components and the Hf 4f rocking curve.</figcaption>
+            </figure>
+          </div>
+        </details>
+
+        <details>
+          <summary>Multilayer optical model and fitting loop</summary>
+          <div class="detail-content">
+            <p>
+              The model describes reflection and transmission at the layer boundaries.
+              Calculated X-ray fields and photoelectron attenuation enter the simulated rocking curves;
+              the structure parameters are then refined against the experiment.
+            </p>
+            <div class="figure-grid">
+              <figure>
+                <a class="figure-link" href="images/fig03_XSW_scheme_concrete.png" aria-label="Open the multilayer optical model at full size">
+                  <img src="images/fig03_XSW_scheme_concrete.png" width="931" height="943" loading="lazy" decoding="async"
+                    alt="Reflection and transmission amplitudes in a vacuum/HZO/WOx/W/substrate multilayer model, with layer optical constants, thicknesses, and interface roughness parameters." />
+                </a>
+                <figcaption>Optical model of the HZO/WO<sub>x</sub>/W stack and its interfaces.</figcaption>
+              </figure>
+              <figure>
+                <a class="figure-link" href="images/fig04_haxpes_algorithm_fit.png" aria-label="Open the model fitting loop at full size">
+                  <img src="images/fig04_haxpes_algorithm_fit.png" width="1084" height="760" loading="lazy" decoding="async"
+                    alt="Iterative fitting workflow linking model-parameter updates, grazing-incidence specular reflection calculations, rocking-curve simulation, and comparison with measured photoemission intensity." />
+                </a>
+                <figcaption>Parameter refinement using calculated reflection and photoemission rocking curves.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>Depth selectivity and band-alignment reference</summary>
+          <div class="detail-content">
+            <p>
+              The depth-weighted Hf 4f signal identifies incidence angles that increase the relative contribution
+              of a 1 nm interfacial region. Core-level binding energies at these angles can then be related
+              to the core-level–valence-band separation measured in a reference spectrum.
+            </p>
+            <figure>
+              <a class="figure-link" href="images/fig06_haxpes_Depth_selectivity_0.png" aria-label="Open the interface depth-selectivity analysis at full size">
+                <img src="images/fig06_haxpes_Depth_selectivity_0.png" width="1573" height="885" loading="lazy" decoding="async"
+                  alt="Depth-dependent Hf 4f contributions for two cases, with a 1 nm interface region highlighted, preferred incidence angles of 0.721 and 0.667 degrees, and the associated Hf 4f binding energies." />
+              </a>
+              <figcaption>
+                Depth-selectivity analysis for the two illustrated cases. The marked angles maximize the
+                modeled relative contribution of the selected interfacial region.
+              </figcaption>
+            </figure>
+            <figure>
+              <a class="figure-link" href="images/fig07_haxpes_kraut_0.png" aria-label="Open the core-level and valence-band reference spectra at full size">
+                <img src="images/fig07_haxpes_kraut_0.png" width="1635" height="557" loading="lazy" decoding="async"
+                  alt="Reference Hf 4f spectrum and a valence-band edge fit used to determine the energy separation between Hf 4f seven-halves and the valence-band maximum." />
+              </a>
+              <figcaption>Reference core-level and valence-band spectra used in the Kraut band-alignment approach.</figcaption>
+            </figure>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <footer class="project-footer">
+      <p>
+        MSc thesis, Moscow Institute of Physics and Technology, 2022:
+        “Investigation of the Chemical and Electronic Properties of the Buried HZO/W Interface Utilizing NTR SW-HAXPES”.
+      </p>
+      <div class="footer-links">
+        <a href="../../#projects">← Back to projects</a>
+        <a href="../../cv.pdf" download="Nikita-Sizykh-CV.pdf" type="application/pdf">Download CV (PDF)</a>
+        <a href="mailto:sizykh.na@phystech.edu">Discuss this project</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
